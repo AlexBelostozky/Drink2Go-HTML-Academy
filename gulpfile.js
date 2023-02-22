@@ -39,7 +39,7 @@ export function processStyles () {
     .pipe(plumber())
     .pipe(less())
     .pipe(postcss([
-      postUrl({ assetsPath: '../' }),
+      // postUrl({ assetsPath: '../' }),
       autoprefixer(),
       csso()
     ]))
